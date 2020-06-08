@@ -1,0 +1,127 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.Y = 152.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    Left = 16
+    Top = 49
+  end
+  object Label1: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 88.000000000000000000
+    Text = 'Label1'
+    TabOrder = 3
+  end
+  object Label2: TLabel
+    Position.X = 272.000000000000000000
+    Position.Y = 96.000000000000000000
+    Text = 'Label2'
+    TabOrder = 4
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Size.Width = 217.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    Left = 384
+    Top = 49
+  end
+  object Label3: TLabel
+    Position.X = 264.000000000000000000
+    Position.Y = 232.000000000000000000
+    Text = 'Label3'
+    TabOrder = 5
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Position.Y = 208.000000000000000000
+  end
+  object Edit4: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    Position.X = 192.000000000000000000
+    Position.Y = 208.000000000000000000
+  end
+  object Label4: TLabel
+    Position.X = 272.000000000000000000
+    Position.Y = 240.000000000000000000
+    Text = 'Label4'
+    TabOrder = 8
+  end
+  object Label5: TLabel
+    Position.X = 184.000000000000000000
+    Position.Y = 176.000000000000000000
+    Text = 'Label5'
+    TabOrder = 9
+  end
+  object SpeedButton1: TSpeedButton
+    Position.X = 144.000000000000000000
+    Position.Y = 168.000000000000000000
+    Text = 'SpeedButton1'
+  end
+  object ImageControl1: TImageControl
+    Position.X = 168.000000000000000000
+    Position.Y = 184.000000000000000000
+    TabOrder = 11
+  end
+  object Button1: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 328.000000000000000000
+    TabOrder = 12
+    Text = 'Button1'
+  end
+  object Button2: TButton
+    Position.X = 120.000000000000000000
+    Position.Y = 488.000000000000000000
+    TabOrder = 13
+    Text = 'Button2'
+  end
+  object Button3: TButton
+    Position.X = 280.000000000000000000
+    Position.Y = 504.000000000000000000
+    TabOrder = 14
+    Text = 'Button3'
+  end
+  object Layout1: TLayout
+    Position.X = 40.000000000000000000
+    Position.Y = 312.000000000000000000
+    TabOrder = 16
+  end
+  object Panel1: TPanel
+    Position.X = 264.000000000000000000
+    Position.Y = 184.000000000000000000
+    TabOrder = 19
+  end
+  object Text3D1: TText3D
+    Width = 3.000000000000000000
+    Height = 2.000000000000000000
+    Depth = 0.300000011920929000
+    Flatness = 1.000000000000000000
+    Sides = [Front, Back, Shaft]
+  end
+  object Label6: TLabel
+    Position.X = 184.000000000000000000
+    Position.Y = 16.000000000000000000
+    Text = 'Label6'
+    TabOrder = 21
+  end
+  object StyleBook1: TStyleBook
+    Styles = <>
+    Left = 368
+    Top = 504
+  end
+end
