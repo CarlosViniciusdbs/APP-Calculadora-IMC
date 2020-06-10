@@ -18,10 +18,11 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
   StyleBook = StyleBook1
   DesignerMasterStyle = 0
   inherited Edit1: TEdit
-    KeyboardType = NumbersAndPunctuation
+    KeyboardType = DecimalNumberPad
     Position.X = 8.000000000000000000
     Position.Y = 120.000000000000000000
     Size.Width = 97.000000000000000000
+    KillFocusByReturn = True
   end
   inherited Label1: TLabel
     StyledSettings = [Family, Size, Style]
@@ -36,10 +37,11 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
     Text = 'Altura (m)'
   end
   inherited Edit2: TEdit
-    KeyboardType = NumbersAndPunctuation
+    KeyboardType = DecimalNumberPad
     Position.X = 168.000000000000000000
     Position.Y = 120.000000000000000000
     Size.Width = 97.000000000000000000
+    KillFocusByReturn = True
   end
   inherited Label3: TLabel
     StyledSettings = [Family, Size, Style]
@@ -55,10 +57,12 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
     StyleLookup = 'editstyle'
     Position.X = 8.000000000000000000
     Position.Y = 296.000000000000000000
+    Enabled = False
   end
   inherited Edit4: TEdit
     Position.X = 168.000000000000000000
     Position.Y = 296.000000000000000000
+    Enabled = False
     Size.Width = 177.000000000000000000
     Size.PlatformDefault = False
   end
@@ -140,7 +144,26 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
     Position.Y = 416.000000000000000000
     Visible = False
   end
-  inherited StyleBook1: TStyleBook [15]
+  inherited Panel1: TPanel
+    Align = Top
+    Size.Width = 450.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+  end
+  inherited Label6: TLabel
+    StyledSettings = [Family]
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claDarkslategray
+    TextSettings.HorzAlign = Center
+    Text = 'Calculadora IMC'
+  end
+  inherited StyleBook1: TStyleBook
     Styles = <
       item
       end
@@ -33486,24 +33509,9 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
           650C50726573736564436F6C6F720708636C615768697465000000}
       end>
   end
-  inherited Panel1: TPanel [16]
-    Align = Top
-    Size.Width = 450.000000000000000000
-    Size.Height = 49.000000000000000000
-    Size.PlatformDefault = False
+  inherited NumberBox1: TNumberBox
+    Position.X = 40.000000000000000000
+    Position.Y = 520.000000000000000000
     Visible = False
-  end
-  inherited Text3D1: TText3D [17]
-  end
-  inherited Label6: TLabel [18]
-    StyledSettings = [Family, Size]
-    Position.X = 8.000000000000000000
-    Position.Y = 8.000000000000000000
-    Size.Width = 321.000000000000000000
-    Size.PlatformDefault = False
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    TextSettings.FontColor = claDarkslategray
-    TextSettings.HorzAlign = Center
-    Text = 'Calculadora IMC'
   end
 end

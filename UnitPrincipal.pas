@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   FMX.Controls.Presentation, FMX.Edit, UnitIMC, FMX.Layouts,
-  System.Math.Vectors, FMX.Controls3D, FMX.Objects3D;
+  System.Math.Vectors, FMX.Controls3D, FMX.Objects3D, FMX.EditBox, FMX.NumberBox;
 
 type
   TForm1 = class(TForm)
@@ -29,6 +29,7 @@ type
     Panel1: TPanel;
     Text3D1: TText3D;
     Label6: TLabel;
+    NumberBox1: TNumberBox;
     procedure Informar_dados(sender:TObject);
     procedure SpeedButton1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
