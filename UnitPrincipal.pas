@@ -69,17 +69,21 @@ end;
 
 
 procedure TForm1.SpeedButton1Click(Sender: TObject);
+// Realiza a verificação se os campos estão em branco para prosseguir com a rotina
 begin
-if (Edit1.Text = '') or (edit2.Text = '') then
+if (Edit1.Text.IsEmpty) or (edit2.Text.IsEmpty) then
   begin
-    TDialogService.ShowMessage('Preencha os campos Peso e Altura');
-    Edit1.SetFocus;
-    end;
+    TDialogService.ShowMessage('Preencha corretamente os campos Peso e Altura') ;
+    Edit1.SetFocus
+    end
+  else
+  begin
   Informar_dados(Sender);
   Calculadora_IMC.Calcular_IMC(Calculadora_IMC.Peso, Calculadora_IMC.Altura);
   Calculadora_IMC.Retornar_IMC(Calculadora_IMC.IMC);
   Edit3.Text := FormatFloat('0.00', Calculadora_IMC.IMC);
   Edit4.Text := Calculadora_IMC.Classifica;
+  end;
 end;
 
 end.
