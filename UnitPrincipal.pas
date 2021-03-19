@@ -6,7 +6,8 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   FMX.Controls.Presentation, FMX.Edit, UnitIMC, FMX.Layouts,
-  System.Math.Vectors, FMX.Controls3D, FMX.Objects3D, FMX.EditBox, FMX.NumberBox;
+  System.Math.Vectors, FMX.Controls3D, FMX.Objects3D, FMX.EditBox, FMX.NumberBox,
+  FMX.Advertising;
 
 type
   TForm1 = class(TForm)
@@ -30,9 +31,12 @@ type
     Text3D1: TText3D;
     Label6: TLabel;
     NumberBox1: TNumberBox;
+    BannerAd1: TBannerAd;
     procedure Informar_dados(sender:TObject);
     procedure SpeedButton1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,6 +62,22 @@ begin
   Edit3.Text := '';
   Edit4.Text := '';
   Edit1.SetFocus;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  {$IFDEF ANDROID }
+  BannerAd1.TestMode:= TRUE;
+  BannerAd1.AdUnitID:= 'ca-app-pub-4362156024351151/9209165592';
+
+  {$ENDIF ANDROID}
+end;
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+    {$IFDEF ANDROID }
+     BannerAd1.LoadAd;
+    {$ENDIF ANDROID}
 end;
 
 procedure TForm1.Informar_dados(sender: TObject);

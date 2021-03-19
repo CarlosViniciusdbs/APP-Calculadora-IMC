@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- BEGIN_INCLUDE(manifest) -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.embarcadero.Calculadora_IMC"
+        package="com.embarcadero.Teste1"
         android:versionCode="1"
         android:versionName="1.0.0"
         android:installLocation="auto">
@@ -15,11 +15,12 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-feature android:glEsVersion="0x00020000" android:required="True"/>
     <application android:persistent="False" 
         android:restoreAnyVersion="False" 
-        android:label="Calculadora_IMC" 
+        android:label="Teste1" 
         android:debuggable="True" 
         android:largeHeap="False"
         android:icon="@drawable/ic_launcher"
@@ -28,12 +29,13 @@
         android:resizeableActivity="false">
 
         
-        
+        <meta-data android:name="com.google.android.gms.version" android:value="12451000" />
+
         
         <!-- Our activity is a subclass of the built-in NativeActivity framework class.
              This will take care of integrating with our NDK code. -->
         <activity android:name="com.embarcadero.firemonkey.FMXNativeActivity"
-                android:label="Calculadora_IMC"
+                android:label="Teste1"
                 android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
                 android:launchMode="singleTask">
             <!-- Tell NativeActivity the name of our .so -->
@@ -44,7 +46,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter> 
         </activity>
-        
+        <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
         <receiver android:name="com.embarcadero.rtl.notifications.NotificationAlarm" />
 
     </application>

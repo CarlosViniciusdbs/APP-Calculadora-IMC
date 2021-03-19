@@ -16,6 +16,8 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
   Fill.Gradient.StopPosition.X = 0.499999970197677600
   Fill.Gradient.StopPosition.Y = 0.000000000000000000
   StyleBook = StyleBook1
+  OnCreate = FormCreate
+  OnShow = FormShow
   DesignerMasterStyle = 0
   inherited Edit1: TEdit
     KeyboardType = DecimalNumberPad
@@ -33513,5 +33515,9 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
     Position.X = 40.000000000000000000
     Position.Y = 520.000000000000000000
     Visible = False
+  end
+  inherited BannerAd1: TBannerAd
+    Position.X = -16.000000000000000000
+    Position.Y = 456.000000000000000000
   end
 end
