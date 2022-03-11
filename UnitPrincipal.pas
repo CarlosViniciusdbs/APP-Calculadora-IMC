@@ -50,8 +50,9 @@ var
 implementation
 
 {$R *.fmx}
-
 {$R *.LgXhdpiPh.fmx ANDROID}
+{$R *.LgXhdpiTb.fmx ANDROID}
+
 uses
     FMX.DialogService;
 
@@ -67,7 +68,7 @@ end;
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   {$IFDEF ANDROID }
-  BannerAd1.TestMode:= TRUE;
+  BannerAd1.TestMode:= True;
   BannerAd1.AdUnitID:= 'ca-app-pub-4362156024351151/9209165592';
 
   {$ENDIF ANDROID}

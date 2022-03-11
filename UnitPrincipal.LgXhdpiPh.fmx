@@ -66,6 +66,7 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
     Position.Y = 296.000000000000000000
     Enabled = False
     Size.Width = 177.000000000000000000
+    Size.Height = 32.000000000000000000
     Size.PlatformDefault = False
   end
   inherited Label4: TLabel
@@ -73,6 +74,7 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
     Position.X = 8.000000000000000000
     Position.Y = 272.000000000000000000
     Size.Width = 57.000000000000000000
+    Size.Height = 23.000000000000000000
     Size.PlatformDefault = False
     TextSettings.FontColor = claDarkgreen
     Text = 'IMC'
@@ -82,6 +84,7 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
     Position.X = 168.000000000000000000
     Position.Y = 272.000000000000000000
     Size.Width = 121.000000000000000000
+    Size.Height = 23.000000000000000000
     Size.PlatformDefault = False
     TextSettings.FontColor = claDarkgreen
     Text = 'Classifica'#231#227'o'
@@ -91,6 +94,7 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
     Position.X = 8.000000000000000000
     Position.Y = 176.000000000000000000
     Size.Width = 81.000000000000000000
+    Size.Height = 48.000000000000000000
     Size.PlatformDefault = False
     Text = 'Calcular'
     TextSettings.Font.Family = 'Book Antiqua'
@@ -158,6 +162,7 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
     Position.X = 8.000000000000000000
     Position.Y = 8.000000000000000000
     Size.Width = 321.000000000000000000
+    Size.Height = 23.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 18.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
@@ -33517,7 +33522,7 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
     Visible = False
   end
   inherited BannerAd1: TBannerAd
-    Position.X = -16.000000000000000000
-    Position.Y = 456.000000000000000000
+    Align = Bottom
+    Position.Y = 645.000000000000000000
   end
 end
